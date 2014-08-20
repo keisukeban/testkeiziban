@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>keiziban from jQuery, Ajax, PHP, MySQL</title>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="./keiziban.js"></script>
+</head>
+<body>
+
+<!-- ¤³¤³¤ËDB¤«¤éÕi¤ßÞz¤ó¤À¡¢name,value¤ò¤Ö¤ÁÞz¤ß¤¿¤¤ -->
+<div id="output"></div>
+<hr>
+
+<!-- ¤³¤³¤ËDB¤Ë•ø¤­Þz¤à¡¢name,value¤òËÍÐÅ¤·¤¿¤¤ -->
+<form method="post">
+	<p>name:<textarea id="name"></textarea></p>
+	<p>value:<textarea id="value"></textarea></p>
+	<p><input type="submit" id="send"><input type="button" id="reload" value="LOAD"></p>
+</form>
+
+</body>
+</html>

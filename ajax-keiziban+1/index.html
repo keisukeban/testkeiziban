@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>keiziban from jQuery, Ajax, PHP, MySQL</title>
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="./keiziban.js"></script>
+    <script src="./underscore-min.js"></script>
+</head>
+<body>
+
+<div id="done" style="background-color: lightgray;">
+<h1>掲示板</h1>
+</div>
+<!-- ↑にDBから読み込んだものを追加していく -->
+<script id="tpl" type="text/template">
+	<p>NAME: <span style="border:1px solid gray;"><%- name %></span></p>
+	<p>投稿: <span style="border:1px solid gray;"><%- value %></span></p>
+<hr>
+</script>
+<hr>
+
+<!-- 送信，リロード -->
+<form method="post">
+	<p>name:<textarea id="name"></textarea></p>
+	<p>value:<textarea id="value"></textarea></p>
+	<p><input type="submit" id="send"><input type="button" id="reload" value="LOAD"></p>
+</form>
+
+</body>
+</html>
